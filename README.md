@@ -14,7 +14,6 @@ YQLabel
 ======================
 
 YQLabel is to generate programmably UILabel, including size fits with width. It's used in dynamically height table cell.
-
 <br>Example (WebScraper)
 
     float tempOriginY = 72.0;
