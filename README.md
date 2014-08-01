@@ -4,6 +4,14 @@ YQ-Library-Objective-C
 My library come here. (in Objective-C)
 
 
+Add Cutomized Fonts
+======================
+
+1. You need your font in .otf or .ttf copied to your project. For example in Supporting Files.
+2. You need to edit .plist file. Add "Fonts provided by application" key into your plist and in Item 0 copy the exact filename of the font you copied to your Supporting files WITH extension. For example: "JosefinSansStd-Light_0.otf"
+3. Make sure that the font you imported to your app is being packed into app itself. Do that by selecting your Target, then Build Phases, then Copy Bundle Resources. If you don't see your font in there, drag it from Supporting Files.
+
+
 NSDictionary-JSONString
 ======================
 
