@@ -24,7 +24,7 @@ YQLabel
 YQLabel is to generate programmably UILabel, including size fits with width. It's used in dynamically height table cell.
 <br>
 Example (WebScraper)
-
+```Objective-C
     float tempOriginY = 72.0;
     CGRect tempFrame = CGRectMake(20.0, tempOriginY, CGRectGetWidth(self.view.frame)-40.0, 1024.0);
     NSDictionary *tempHead = [self.kimonoResultsHeader objectAtIndex:0];
@@ -52,3 +52,4 @@ Example (WebScraper)
     [self.view addSubview:self.articleTitle];
     [self.view addSubview:self.articleAuthor];
     [self.view addSubview:self.publishDate];
+```
