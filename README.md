@@ -58,7 +58,6 @@ YQButton
 ======================
 I primarily use YQButton to create a click-able image.
 
-<br>
 ```Objective-C
 @interface YQButtonWithImage : YQButton
 
