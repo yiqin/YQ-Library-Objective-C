@@ -53,3 +53,32 @@ self.publishDate = [[YQLabelWithFixedWidth alloc] initWithText:tempDate
 [self.view addSubview:self.articleAuthor];
 [self.view addSubview:self.publishDate];
 ```
+
+YQButton
+======================
+I primarily use YQButton to create a click-able image.
+
+<br>
+```Objective-C
+@interface YQButtonWithImage : YQButton
+
+// mutable subclass(NString, NSDictionary)
+@property (strong, nonatomic) NSString* regularImage;
+@property (strong, nonatomic) NSString* selectedImage;
+@property (nonatomic) BOOL isBackgroundTransparent;
+@property (nonatomic) BOOL hasAnimation;
+
+- (instancetype)initWithFrame:(CGRect)frame image:(NSString*)image selectedImage:(NSString*)selectedImage;
+- (instancetype)initWithCenterPoin:(CGPoint)centerPoint imageSize:(CGSize)imageSize image:(NSString*)image selectedImage:(NSString*)selectedImage;
+
+@end
+
+```
+
+```Objective-C
+// Long press on the screen, and a button is generated at the point you pressed.
+YQButtonWithImage *tempButton = [[YQButtonWithImage alloc] initWithCenterPoin:locationInView imageSize:CGSizeMake(45, 45) image:tempImageName selectedImage:tempImageName];
+tempButton.hasAnimation = YES;
+
+[self.backgroundView addSubview:tempButton];
+```
